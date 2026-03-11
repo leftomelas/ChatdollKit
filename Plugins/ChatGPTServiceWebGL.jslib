@@ -52,5 +52,6 @@ mergeInto(LibraryManager.library, {
     AbortChatCompletionJS: function() {
         console.log("Abort ChatGPT at AbortChatCompletionJS");
         document.chatGPTAbortController.abort();
+        document.chatGPTAbortController = null;
     }
 });

@@ -50,5 +50,6 @@ mergeInto(LibraryManager.library, {
     AbortGeminiMessageStreamJS: function() {
         console.log("Abort Gemini at AbortGeminiMessageStreamJS");
         document.geminiAbortController.abort();
+        document.geminiAbortController = null;
     }
 });

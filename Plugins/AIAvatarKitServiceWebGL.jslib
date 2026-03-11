@@ -52,5 +52,6 @@ mergeInto(LibraryManager.library, {
     AbortAIAvatarKitMessageStreamJS: function() {
         console.log("Abort AIAvatarKit at AbortAIAvatarKitMessageStreamJS");
         document.aakAbortController.abort();
+        document.aakAbortController = null;
     }
 });
