@@ -52,5 +52,6 @@ mergeInto(LibraryManager.library, {
     AbortDifyMessageStreamJS: function() {
         console.log("Abort Dify at AbortDifyMessageStreamJS");
         document.difyAbortController.abort();
+        document.difyAbortController = null;
     }
 });

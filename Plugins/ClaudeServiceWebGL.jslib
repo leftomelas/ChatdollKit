@@ -54,5 +54,6 @@ mergeInto(LibraryManager.library, {
     AbortClaudeMessageStreamJS: function() {
         console.log("Abort Claude at AbortClaudeMessageStreamJS");
         document.claudeAbortController.abort();
+        document.claudeAbortController = null;
     }
 });
